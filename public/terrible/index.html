@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<link rel="stylesheet" href="style.css">
+
+	<script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+	<script defer src="script.js"></script>
+
+	<script defer src="https://use.fontawesome.com/e4e3270e58.js"></script>
+
+	<script id="hidden-template" type="text/x-custom-template">
+		<div class="course">
+			<form class="form-inline courseForm">
+				<label for="courseNameInput" class="nameLabel">course</label>
+				<input type="text" class="form-control courseNameInput" placeholder="eg. CS 452" required>
+
+				<label class="mr-sm-2 dayLabel" for="daySelect">day</label>
+				<select class="custom-select form-control daySelect">
+					<option selected>pick pls</option>
+					<option value="135">M W F</option>
+					<option value="13">M W</option>
+					<option value="1">M</option>
+					<option value="3">W</option>
+					<option value="24">T Th</option>
+					<option value="2">T</option>
+					<option value="4">Th</option>
+				</select>
+
+				<label class="mr-sm-2 timeLabel" for="hourSelect">start</label>
+				<select class="custom-select form-control hourSelect">
+					<option selected>pls pick</option>
+					<option value="8">8</option>
+					<option value="9">9</option>
+					<option value="10">10</option>
+					<option value="11">11</option>
+					<option value="12">12</option>
+					<option value="13">13</option>
+					<option value="14">14</option>
+					<option value="15">15</option>
+					<option value="16">16</option>
+					<option value="17">17</option>
+					<option value="18">18</option>
+					<option value="19">19</option>
+					<option value="20">20</option>
+					<option value="21">21</option>
+				</select>
+
+				<select class="custom-select form-control minuteSelect">
+					<option selected>pick pls</option>
+					<option value="0">00</option>
+					<option value="30">30</option>
+				</select>
+
+				<button type="button" class="remove"><i class="fa fa-trash"></i></button>
+			</form>
+		</div>
+	</script>
+
+</head>
+<body>
+	<div class="container">
+		<div id="form">
+			<div id="messages" class="row text-center">
+
+			</div>
+			<form id="nameEmail" class="form-inline">
+				<label for="nameInput" id="nameLabel">name</label>
+				<input type="text" class="form-control" id="nameInput">
+				
+				<label for="emailInput" id="emailLabel">email</label>
+				<input type="email" class="form-control" id="emailInput">
+
+				<button type="button" class="btn btn-primary pull-right" id="submitCourses">submit</button>
+
+				<button type="button" class="btn btn-default pull-right" id="addCourse"><i class="fa fa-plus-square-o"></i>&nbsp;&nbsp;add course</button>
+			</form>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,77 @@
+body{
+	font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+button{
+	outline: none;
+	border: none;
+}
+
+#form{
+	padding-top: 8vh;
+}
+
+#nameEmail{
+	margin-bottom: 8vh;
+}
+
+#emailLabel, .dayLabel, .timeLabel{
+	margin-left: 15px;
+}
+
+#submitCourses{
+	margin-left: 15px;
+}
+
+#submitCourses{
+	background: url(sad.png);
+	background-size: 35px 40px ;
+}
+
+#addCourse{
+	background: url(sad.png);
+	background-size: 35px 40px;
+	color: white;
+}
+
+#errorMsg{
+	margin-bottom: 8vh;
+	color: red;
+}
+
+.custom-select{
+	padding: 0;
+    margin: 0;
+    border: 1px solid #ccc;
+    width: 80px;
+    border-radius: 3px;
+    overflow: hidden;
+    background-color: #fff;
+
+}
+
+.course{
+	margin-bottom: 1vh;
+}
+
+.remove{
+	outline: none;
+	border: none;
+	background-color: white;
+}
+
+textarea:hover, 
+input:hover, 
+textarea:active, 
+input:active, 
+textarea:focus, 
+input:focus,
+button:focus,
+button:active,
+button:hover,
+label:focus,
+.btn:active,
+.btn.active{
+    outline:0px !important;
+    -webkit-appearance:none;
+}
